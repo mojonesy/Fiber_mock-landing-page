@@ -137,3 +137,28 @@ input {
     left: 3px;
     content: "✓";
 }
+
+.terms__label {
+    font-weight: var(--fw-body);
+    text-align: center;
+}
+
+.submit-button {
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body-bold);
+    font-size: var(--fs-body-bold);
+    border: none;
+    border-radius: 5px;
+    margin: 1.5em 0;
+    padding: 1.2em 3em;
+    width: 100%;
+}
+
+.sign-in { text-align: center }
+
+.sign-in__link {
+    text-decoration: none;
+    cursor: pointer;
+}
