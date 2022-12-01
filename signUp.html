@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" 
+        rel="stylesheet">
+    <!-- Cloudflare -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Custom Styles -->
+    <link
+        href="./index.css"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="sign-up-page">
+        <header>
+            <p class="fiber bold">Fiber</p>
+        </header>
+
+        <h1 class="sign-up__title">Create your Fiber account</h1>
+        
+        <form class="sign-up__form">
+            <label for="name" class="name__label">Your Name</label>
+            <input id="name" name="name" class="name__input" type="text" placeholder="John Doe" required>
+            
+            <label for="email" class="email__label">E-mail</label>
+            <input id="email" name="email" class="email__input" type="email" placeholder="john@example.com" required>
+
+            <label for="password" class="password__label">Password</label>
+            <div class="password-container">
+                <input id="password" name="password" class="password__input" type="password" placeholder="At least 8 characters" min="8" required>
+                <i class="fa-solid fa-eye" id="eye"></i>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

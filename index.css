@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+:root {
+    --ff-primary: 'Inter', sans-serif;
+
+    --fw-h1: 600;
+    --fw-body-bold: 600;
+    --fw-body: 300;
+
+    --fs-h1: 2em;
+    --fs-body-bold: 1em;
+    --fs-body: 1em;
+
+    --clr-light: #F9F8F3;
+    --clr-dark: #0B0A08;
+    --clr-accent: #4E13D1;
+}
+
+html {
+    /* color-scheme: dark light; */
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+h1 {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-h1);
+    font-size: var(--fs-h1);
+}
+
+p {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+}
+
+.bold {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body-bold);
+    font-size: var(--fs-body-bold);
+}
+
+label {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body-bold);
+    font-size: var(--fs-body-bold);
+}
+
+input {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+}
+
+
+/* Sign up page */
+
+.sign-up-page {
+    padding: 3em 2em;
+}
+
+.fiber {
+    font-size: 1.2em;
+}
+
+.sign-up__title {
+    margin: 1.5em 0 .5em;
+}
+
+.name__label,
+.email__label,
+.password__label { 
+    display: block;
+    padding-bottom: 8px;
+}
+
+.name__input,
+.email__input,
+.password__input {
+    margin-bottom: 1.8em;
+    padding: 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.name__input::placeholder,
+.email__input::placeholder,
+.password__input::placeholder {
+    color: #d0d0d0;
+}
+
+.password-container {
+    width: 100%;
+    position: relative;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 18%;
+    right: 4%;
+    cursor: pointer;
+    color: #d0d0d0;
+}
+
