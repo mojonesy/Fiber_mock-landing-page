@@ -121,11 +121,16 @@ input {
     color: #d0d0d0;
 }
 
+.terms__area {
+    display: flex;
+    justify-content: space-around;
+}
+
 .input__terms {
     appearance: none;
     border: 1px solid #d0d0d0;
     border-radius: 5px;
-    width: 20px;
+    width: 38px;
     height: 20px;
     margin-right: .5em;
     vertical-align: sub;
@@ -140,7 +145,6 @@ input {
 
 .terms__label {
     font-weight: var(--fw-body);
-    text-align: center;
 }
 
 .submit-button {
