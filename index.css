@@ -50,6 +50,7 @@ p {
     font-family: var(--ff-primary);
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
+    line-height: 1.5em;
 }
 
 .bold {
@@ -72,6 +73,8 @@ input {
 
 
 /* Sign up page */
+
+.container { height: 100vh }
 
 .sign-up-page {
     padding: 3em 2em;
@@ -182,16 +185,30 @@ input {
 
     .sign-up-page {
         flex: 1 1 0;
+        padding: 3em 5em;
     }
 
     .sign-up-carousel {
         display: block;
         flex: 1 1 0;
         background-color: var(--clr-accent);
+        padding: 3em 5em;
     }
 
     .sign-up-image {
-        margin: 8em auto 1em;
-        max-width: 350px;
+        margin: 6em auto 1em;
+        max-width: 500px;
+    }
+
+    .sign-up-carousel__title,
+    .sign-up-carousel__body {
+        color: var(--clr-light);
+        text-align: center;
+        margin-bottom: .2em;
+    }
+
+    .sign-up-carousel__body {
+        max-width: 420px;
+        margin: 0 auto;
     }
 }
