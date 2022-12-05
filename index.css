@@ -191,14 +191,18 @@ p {
 
 .visually-hidden { display: none }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .container {
         display: flex;
     }
 
     .sign-up-page {
         flex: 1 1 0;
-        padding: 3em 5em;
+        padding: 2em 2.5em;
+    }
+
+    .sign-up__title {
+        margin-top: 1em;
     }
 
     .sign-up-carousel {
@@ -209,8 +213,14 @@ p {
     }
 
     .sign-up-image {
-        margin: 6em auto 1em;
-        max-width: 500px;
+        margin: 6.5em auto 1em;
+    }
+
+    .sign-up-image-image {
+        margin: 0 auto;
+        max-width: 600px;
+        height: 225px;
+        object-fit: contain;
     }
 
     .sign-up-carousel__title,
