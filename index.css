@@ -16,8 +16,8 @@
     --fw-body: 300;
 
     --fs-h1: 2em;
-    --fs-body-bold: 1em;
-    --fs-body: 1em;
+    --fs-body-bold: .9em;
+    --fs-body: .9em;
 
     --clr-light: #F9F8F3;
     --clr-dark: #0B0A08;
@@ -147,6 +147,10 @@ input {
     font-weight: var(--fw-body);
 }
 
+.terms__link {
+    font-weight: bold;
+}
+
 .submit-button {
     background-color: var(--clr-accent);
     color: var(--clr-light);
@@ -165,4 +169,29 @@ input {
 .sign-in__link {
     text-decoration: none;
     cursor: pointer;
+}
+
+.sign-up-carousel {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+
+    .sign-up-page {
+        flex: 1 1 0;
+    }
+
+    .sign-up-carousel {
+        display: block;
+        flex: 1 1 0;
+        background-color: var(--clr-accent);
+    }
+
+    .sign-up-image {
+        margin: 8em auto 1em;
+        max-width: 350px;
+    }
 }
