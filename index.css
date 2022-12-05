@@ -189,6 +189,8 @@ p {
     display: none;
 }
 
+.visually-hidden { display: none }
+
 @media (min-width: 768px) {
     .container {
         display: flex;
@@ -221,5 +223,31 @@ p {
     .sign-up-carousel__body {
         max-width: 420px;
         margin: 0 auto;
+    }
+
+    .template-picker {
+        display: flex;
+        gap: .5em;
+        width: fit-content;
+        margin-inline: auto;
+        padding: .5em 2em;
+    }
+
+    .template-picker:hover,
+    .template-picker input[type="radio"]:hover {
+        cursor: pointer
+    }
+
+    .template-picker input[type="radio"] {
+        appearance: none;
+        background-color: #a9a9a9;
+        width: .6rem;
+        height: .6rem;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .template-picker input[type="radio"]:checked {
+        background-color: var(--clr-light);
     }
 }
