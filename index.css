@@ -20,6 +20,7 @@
     --fs-body: .9em;
 
     --clr-light: #F9F8F3;
+    --clr-light-yellow: #fdfbf2;
     --clr-dark: #0B0A08;
     --clr-dark-gray: #565656;
     --clr-accent: #4E13D1;
@@ -75,10 +76,6 @@ input {
 
 /* General Styles */
 
-.container {
-    padding: 1.5em 1.8em;
-}
-
 h1 { padding: .5em 0 .2em }
 
 p { padding-bottom: .5em }
@@ -89,5 +86,37 @@ button {
     border: none;
     border-radius: 5px;
     padding: 1em 2em;
+    margin: .8em auto;
     width: 100%;
+    transition: 250ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 105%;
+    transition: 250ms ease-in-out;
+}
+
+/* Hero */
+
+.hero__container {
+    padding: 1.5em 1.8em;
+    background-color: var(--clr-light-yellow);
+}
+
+.examples__link {
+    margin: .5em auto 1em;
+    text-align: center;
+}
+
+.examples__link > * {
+    color: var(--clr-accent);
+    text-underline-offset: 3px;
+}
+
+.checkmark__area {
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+    margin: .2em auto;
 }
