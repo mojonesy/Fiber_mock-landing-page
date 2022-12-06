@@ -97,7 +97,17 @@ button:hover {
     transition: 250ms ease-in-out;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Hero */
+.fiber {
+    color: var(--clr-dark);
+    font-size: 1em;
+}
 
 .hero__container {
     padding: 1.5em 1.8em;
