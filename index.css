@@ -142,9 +142,35 @@ button:hover {
 }
 .nav__link__sign-in { font-weight: var(--fw-body-bold) }
 
-@media (min-width: 768px) {
+.hamburger__icon { display: none }
+
+
+@media (max-width: 768px) {
     .hamburger__icon {
-        display: none;
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        background-color: rgba(225, 225, 225, .8);
+        backdrop-filter: blur(3px);
+        inset: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+
+    .nav__buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav__item[type="button"] {
+        margin: 1em 0;
     }
 }
 
