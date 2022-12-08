@@ -142,17 +142,26 @@ button:hover {
 }
 .nav__link__sign-in { font-weight: var(--fw-body-bold) }
 
-.hamburger__icon { display: none }
+.hamburger__icon { 
+    display: none;
+    z-index: 9999;
+}
+.hamburger__icon:hover {
+    cursor: pointer;
+}
+
+.fiber { z-index: 10 }
 
 
 @media (max-width: 768px) {
     .hamburger__icon {
         display: block;
+
     }
 
     .nav {
         position: fixed;
-        background-color: rgba(225, 225, 225, .8);
+        background-color: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(3px);
         inset: 0;
     }
