@@ -101,6 +101,16 @@ button:hover {
     align-items: center;
 }
 
+article {
+    padding: 1.5em 1.8em;
+}
+
+@media (min-width: 768px) {
+    article {
+        padding: 1.5em 4em;
+    }
+}
+
 /* Nav */
 
 .nav__list {
@@ -197,7 +207,6 @@ button:hover {
 }
 
 .hero__container {
-    padding: 1.5em 1.8em;
     background-color: var(--clr-light-yellow);
 }
 
