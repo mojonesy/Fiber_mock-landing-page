@@ -257,7 +257,6 @@ article {
 
 /* free trial article */
 
-
 .article__free-trial h1,
 .article__free-trial p { color: var(--clr-light) }
 
@@ -281,6 +280,55 @@ article {
 .article__free-trial__container img {
     margin-top: 3em;
 }
+
+
+/* testimonials */
+
+.testimonials__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.testimonial {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.testimonial-header > * {
+    display: inline-block;
+    padding-bottom: .5em;
+}
+
+.testimonial-header img { 
+    vertical-align: top;
+    padding-right: .5em;
+}
+
+.testimonial p:not(.testimonial-name) { 
+    color: #000;
+    padding-bottom: 0;
+}
+
+.testimonial-name { 
+    color: var(--clr-accent);
+    padding: 5px 0 0;
+}
+
+.testimonial-body { padding-bottom: .5em }
+
+.testimonial button {
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    color: var(--clr-accent);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body-bold);
+    font-size: var(--fs-body-bold);
+    padding: 1em;
+}
+
+.article__testimonials { padding-bottom: 3em }
 
 
 /* footer */
