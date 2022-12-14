@@ -335,4 +335,36 @@ article {
 
 footer {
     background-color: var(--clr-light-yellow);
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.fiber-description .bold,
+.footer-nav__list-title { 
+    color: #000;
+    font-size: 1em;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-nav__list-title { padding-bottom: .5em }
+
+footer ul {
+    list-style: none;
+}
+
+footer li { padding: .25em 0 }
+
+footer a {
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    font-weight: var(--fs-body);
+    font-size: var(--fs-body);
+    color: var(--clr-dark-gray);
 }
