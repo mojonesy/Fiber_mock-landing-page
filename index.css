@@ -231,3 +231,10 @@ article {
     gap: .5em;
     margin: .2em auto;
 }
+
+
+/* footer */
+
+footer {
+    background-color: var(--clr-light-yellow);
+}
