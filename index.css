@@ -206,7 +206,7 @@ article {
     font-size: 1em;
 }
 
-.hero__container {
+.article__hero {
     background-color: var(--clr-light-yellow);
 }
 
