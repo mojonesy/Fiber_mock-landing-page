@@ -20,7 +20,7 @@
     --fs-body: .9em;
 
     --clr-light: #F9F8F3;
-    --clr-light-yellow: #fdfbf2;
+    --clr-light-yellow: #fff2ee;
     --clr-dark: #0B0A08;
     --clr-dark-gray: #565656;
     --clr-accent: #4E13D1;
@@ -109,7 +109,7 @@ article {
     padding: .3em 0 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     article {
         padding: 1.5em 4em;
     }
@@ -167,7 +167,7 @@ article {
 .fiber { z-index: 10 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .hamburger__icon {
         display: block;
 
@@ -234,6 +234,35 @@ article {
     align-items: flex-start;
     gap: .5em;
     margin: .2em auto;
+}
+
+@media (min-width: 800px) {
+    .article__hero { padding-bottom: 4em }
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hero__image__container,
+    .hero__text { flex-basis: 50% }
+
+    .hero__button { 
+        max-width: 12em;
+        margin: 0;
+    }
+
+    .examples__link { margin-left: 2em }
+
+    .hero__button-with-link,
+    .checkmark__areas {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .checkmark__area { margin: 1em 1em 0 0 }
 }
 
 
