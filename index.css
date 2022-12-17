@@ -20,7 +20,7 @@
     --fs-body: .9em;
 
     --clr-light: #F9F8F3;
-    --clr-light-yellow: #fff2ee;
+    --clr-light-yellow: #fff8ee;
     --clr-dark: #0B0A08;
     --clr-dark-gray: #565656;
     --clr-accent: #4E13D1;
@@ -72,6 +72,11 @@ input {
     font-family: var(--ff-primary);
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
+}
+
+@media (min-width: 800px) {
+    h1 { font-size: 2.5em }
+    p { font-size: 1em }
 }
 
 /* General Styles */
@@ -214,6 +219,10 @@ article {
     background-color: var(--clr-light-yellow);
 }
 
+.hero__ratings {
+    display: none;
+}
+
 .hero__button {
     padding: 1em 2em;
     margin: .8em auto;
@@ -243,7 +252,19 @@ article {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        margin-top: 2em;
     }
+
+    .hero__ratings {
+        display: inline-flex;
+        gap: .2em;
+    }
+    
+    .hero__ratings p {
+        padding: 0 0 0 .5em;
+    }
+
+    .hero__title { padding-top: .2em }
 
     .hero__image__container,
     .hero__text { flex-basis: 50% }
