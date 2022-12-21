@@ -116,7 +116,7 @@ article {
 
 @media (min-width: 800px) {
     article {
-        padding: 1.5em 4em;
+        padding: 2.5em 6em;
     }
 }
 
@@ -303,6 +303,13 @@ article {
 .feature__title { color: #000 }
 
 .feature img { padding-bottom: 1em }
+
+@media(min-width: 800px) {
+    .features__why-fiber {
+        flex-direction: row;
+        gap: 3.5em;
+    }
+}
 
 
 /* free trial article */
