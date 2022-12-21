@@ -338,6 +338,30 @@ article {
     margin-top: 3em;
 }
 
+@media(min-width: 800px) {
+    .article__free-trial__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .article__free-trial__container div {
+        padding-top: 2em;
+    }
+
+    .article__free-trial h1 {
+        font-size: 2em;
+    }
+
+    .article__free-trial__container img {
+        margin-top: 0;
+    }
+
+    .free-trial-button {
+        max-width: 150px;
+    }
+}
+
 
 /* testimonials */
 
