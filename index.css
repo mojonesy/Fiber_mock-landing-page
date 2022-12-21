@@ -467,3 +467,18 @@ footer a {
     font-size: var(--fs-body);
     color: var(--clr-dark-gray);
 }
+
+@media (min-width: 800px) {
+    footer { padding: 3em 6em }
+}
+
+@media (min-width: 1000px) {
+    footer, .footer-nav__list {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .footer-nav__list-item {
+        min-width: 120px;
+    }
+}
