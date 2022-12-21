@@ -411,6 +411,24 @@ article {
 
 .article__testimonials { padding-bottom: 3em }
 
+@media (min-width: 800px) {
+    .article__testimonials {
+        overflow-x: scroll;
+    }
+
+    .testimonials__list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .testimonials__list > * {
+        min-width: 400px;
+        padding: 1.5em;
+    }
+
+    .testimonial-body { padding-bottom: 1.5em }
+}
+
 
 /* footer */
 
